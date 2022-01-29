@@ -618,6 +618,10 @@
 		<Entry builder="separator" />
 		<Entry name="MapBackgroundColorAction" />
 		<Entry builder="separator" />
+		<Entry name="ReplaceMapStylesLightAction" />
+		<Entry name="ReplaceMapStylesPaperAction" />
+		<Entry name="ReplaceMapStylesNightAction" />
+		<Entry builder="separator" />
 		<Entry name="ViewLayoutTypeAction.OUTLINE" />
 		<Entry name="FitToPage" />
 		<Entry name="MoveSelectedNodeAction.CENTER" />

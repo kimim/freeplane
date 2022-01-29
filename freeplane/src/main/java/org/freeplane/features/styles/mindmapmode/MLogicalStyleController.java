@@ -292,6 +292,9 @@ public class MLogicalStyleController extends LogicalStyleController {
 		modeController.addAction(new CopyStyleExtensionsAction());
 		if (modeController.getModeName().equals("MindMap")) {
 			modeController.addAction(new MapBackgroundColorAction());
+			modeController.addAction(new ReplaceMapStylesLightAction());
+			modeController.addAction(new ReplaceMapStylesPaperAction());
+			modeController.addAction(new ReplaceMapStylesNightAction());
 			modeController.addAction(new MapBackgroundImageAction());
 			modeController.addAction(new MapBackgroundClearAction());
 			modeController.addAction(new SetBooleanMapPropertyAction(MapStyle.FIT_TO_VIEWPORT));

@@ -1,6 +1,6 @@
 
 body {
-	font-family:sans-serif;
+	font-family:SimSun;
 }
 
 :link { color: #0000ff; text-decoration:none;}
@@ -61,7 +61,7 @@ h1 {
 }
 
 span.h2 {
-    font-family:sans-serif;
+    font-family:SimSun;
     font-weight:bold;
 }
 
@@ -83,7 +83,7 @@ span.cm {
 }
 
 .fl {
-	color:#0000FF;	
+	color:#0000FF;
 	font-style:italic;
 }
 
@@ -102,7 +102,7 @@ li {
 
 ul li {
 	list-style:square;
-	font-family:sans-serif;
+	font-family:SimSun;
 	font-weight:normal;
 }
 
@@ -178,7 +178,7 @@ li.basic_active {
 	max-height:95%;
 	color:black;
 	background:#ffffff;
-	font:normal 16px courier, sans-serif;
+	font:normal 16px courier, SimSun;
 	border:1px solid black;
 	padding:10px;
 }

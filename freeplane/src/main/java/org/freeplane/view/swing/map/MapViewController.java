@@ -933,7 +933,7 @@ public class MapViewController implements IMapViewManager , IMapViewChangeListen
 	}
 
 	private static final String[] zooms = ResourceController.getResourceController().getArrayProperty("predefined_zoom_levels", ", *");
-	
+
 	@Override
 	public void obtainFocusForSelected() {
 		SwingUtilities.invokeLater(new Runnable() {
@@ -1047,15 +1047,15 @@ public class MapViewController implements IMapViewManager , IMapViewChangeListen
 			String workspaceTitle = ResourceController.getResourceController().getProperty("workspaceTitle");
 			if (model != null) {
 				viewName = getMapViewComponent().getName();
-				frameTitle = (workspaceTitle.isEmpty() ? "" : workspaceTitle + " - ") 
-						+ viewName 
-						+ ((model.isSaved() || model.isReadOnly()) ? "" : "*") 
+				frameTitle = (workspaceTitle.isEmpty() ? "" : workspaceTitle + " - ")
+						+ viewName
+						+ ((model.isSaved() || model.isReadOnly()) ? "" : "*")
 						+ " - " + modeName
 						+ (modeController.isEditingLocked() ? format("OptionPanel.view_mode.true") :
 							model.isReadOnly() ? format("read_only") : "");
 				final File file = model.getFile();
 				if (file != null) {
-					frameTitle += " " + file.getAbsolutePath();
+					frameTitle += " " + file.getName();
 				}
 			} else {
 				frameTitle = (workspaceTitle.isEmpty() ? "" : workspaceTitle + " - ") + modeName;
@@ -1180,7 +1180,7 @@ public class MapViewController implements IMapViewManager , IMapViewChangeListen
 			return;
 		selectedMapView.usePreviousViewRoot();
 	}
-	
-	
+
+
 
 }

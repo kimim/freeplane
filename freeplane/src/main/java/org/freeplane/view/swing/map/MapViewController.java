@@ -1062,7 +1062,7 @@ public class MapViewController implements IMapViewManager , IMapViewChangeListen
 							model.isReadOnly() ? format("read_only") : "");
 				final File file = model.getFile();
 				if (file != null) {
-					frameTitle += " " + file.getAbsolutePath();
+					frameTitle += " " + file.getName();
 				}
 			} else {
 				frameTitle = (workspaceTitle.isEmpty() ? "" : workspaceTitle + " - ") + modeName;
@@ -1213,6 +1213,5 @@ public class MapViewController implements IMapViewManager , IMapViewChangeListen
         for(int i = 0; i < c2.getComponentCount(); i++)
             invalidateAll(c2.getComponent(i));
     }
-
 
 }
